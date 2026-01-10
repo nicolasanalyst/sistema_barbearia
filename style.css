@@ -1,0 +1,20 @@
+body { font-family: sans-serif; }
+
+.fade-in { animation: fadeIn 0.3s ease-in-out; }
+
+@keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(10px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #18181b; }
+::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #52525b; }
+
+/* Date Input Icon Color Inversion for Dark Mode */
+input[type="date"]::-webkit-calendar-picker-indicator { 
+    filter: invert(1); 
+    cursor: pointer; 
+}
